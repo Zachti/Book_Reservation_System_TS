@@ -1,5 +1,5 @@
 import { z } from "zod";
-import {Format, Genre, IBook, IReservedBookInfo, Language} from "../../types/book";
+import { Format, Genre, IBook, IReservedBookInfo, Language } from "../../types/book";
 
 export const customerGetBooksRequestSchema = z.object({
     genre: z.nativeEnum(Genre),

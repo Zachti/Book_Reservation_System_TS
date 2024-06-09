@@ -11,8 +11,8 @@ import {
     adminUpdateBookPriceRequestSchema,
     AdminUpdateBookPriceResponse
 } from "./types/adminRequests";
-import {AdminController} from "../controllers/adminController";
-import {IBook} from "../types/book";
+import { AdminController } from "../controllers/adminController";
+import { IBook } from "../types/book";
 
 export class AdminRoutesHandler {
     private readonly adminRouter: Router;

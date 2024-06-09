@@ -7,7 +7,7 @@ import {
     CustomerReserveBookRequest, customerReserveBookRequestSchema,
     CustomerReserveBookResponse
 } from "./types/customerRequests";
-import {IBook, IReservedBookInfo} from "../types/book";
+import { IBook, IReservedBookInfo } from "../types/book";
 
 export class CustomerRoutesHandler {
     private readonly customerRouter: Router;
