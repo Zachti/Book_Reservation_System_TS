@@ -1,5 +1,5 @@
 import { z } from "zod";
-import {Format, Genre, IBook, ILocation, Language} from "../../types/book";
+import {Format, Genre, IBook, Language} from "../../types/book";
 
 export const adminAddBookRequestSchema = z.object({
     title: z.string(),

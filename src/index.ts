@@ -1,5 +1,5 @@
-import bodyParser = require("body-parser");
-import express = require("express");
+import express from 'express';
+import bodyParser from 'body-parser';
 import Logger from "./utils/logger";
 import { BooksInventory } from "./storage/booksInventory";
 import { CustomerController } from "./controllers/customerController";

@@ -21,7 +21,7 @@ npm install
 ```
 3. Start the server:
 ```
-npm start
+npm run build && run start
 ```
 
 ## Routes

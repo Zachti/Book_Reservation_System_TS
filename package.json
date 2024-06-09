@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node index.ts"
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "lint": "eslint ."
   },
   "author": "",
   "license": "ISC",
