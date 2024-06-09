@@ -27,10 +27,12 @@ npm start
 ## Routes
 
 ### Admin Routes: 
-Add a Book: POST /api/admin
-Remove a Book: DELETE /api/admin
-Update Book Price: PATCH /api/admin
+
+1. Add a Book: POST /api/admin
+2. Remove a Book: DELETE /api/admin
+3. Update Book Price: PATCH /api/admin
 
 ### Customer Routes
-Get Books: GET /api/
-Reserve a Book: PUT /api/
+
+1. Get Books: GET /api/
+2. Reserve a Book: PUT /api/
