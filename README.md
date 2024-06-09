@@ -1,4 +1,4 @@
-# Book Reservation System
+# Books Reservation System
 This project is an Express-based server that manages a book reservation system. It includes two sets of routes: one for customers and one for administrators. The server uses the zod package for request validation and @flatten-js/interval-tree to manage book reservations efficiently. Additionally, the server uses a mutex to ensure thread safety when both admins and customers are accessing the inventory concurrently.
 
 ## Features
