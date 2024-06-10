@@ -9,13 +9,7 @@ export class AdminController {
     async addNewBook(newBook: INewBookInfo): Promise<IBook> {
         const book: IBook = {
             id: uuidv4(),
-            title: newBook.title,
-            author: newBook.author,
-            price: newBook.price,
-            genre: newBook.genre,
-            language: newBook.language,
-            location: newBook.location,
-            format: newBook.format,
+            ...newBook,
         }
         try {
             await this.booksInventory.addBook(book);

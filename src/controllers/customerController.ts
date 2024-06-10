@@ -1,6 +1,7 @@
 import { BooksInventory } from "../storage/booksInventory";
 import { IBook, IBookFilterQuery, IBookReservation, IReservedBookInfo } from "../types/book";
 import Logger from "../utils/logger";
+import { differenceInCalendarDays } from "date-fns";
 
 export class CustomerController {
     constructor(private booksInventory: BooksInventory, private logger: Logger) {}
@@ -13,7 +14,7 @@ export class CustomerController {
         };
         try {
             const reservedBook = await this.booksInventory.addBookReservation(bookId, reservation);
-            const daysReserved = (reservation.endDate - reservation.startDate) / (1000 * 60 * 60 * 24);
+            const daysReserved = differenceInCalendarDays(endDate, startDate) + 1;
             this.logger.info(`Reserved book ${bookId} for user ${reservation.userId} for ${daysReserved} days`);
             return {
                 bookId,
